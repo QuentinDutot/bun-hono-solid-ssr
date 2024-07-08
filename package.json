@@ -1,0 +1,26 @@
+{
+  "name": "vh-stack",
+  "type": "module",
+  "scripts": {
+    "dev": "bunx vite",
+    "build": "bunx tsc && bun src/build.ts",
+    "start": "bun build/server/chunks/server.js",
+    "lint": "bunx biome lint .",
+    "format": "bunx biome format . --write",
+    "check": "bunx biome check . --write"
+  },
+  "dependencies": {
+    "@solidjs/meta": "^0.28.1",
+    "@solidjs/router": "^0.13.6",
+    "hono": "^4.4.12",
+    "solid-js": "^1.8.18"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
+    "@hono/vite-dev-server": "^0.13.0",
+    "@types/bun": "^1.1.6",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3",
+    "vite-plugin-solid": "^2.10.2"
+  }
+}
